@@ -370,6 +370,7 @@
                 <svg>
                   <use href="./images/icons.svg#icon-instagram"></use>
                 </svg>
+              </a>
 
               <a
                 href="https://www.twitter.com/"
@@ -533,6 +534,27 @@
             </a>
           </div>
         </div>
+        <form class="form-footer">
+          <h1 class="subs">Subscribe to the newsletter</h1>
+          <div class="form-group-footer">
+            <label for="email"></label>
+            <input
+              type="text"
+              name="email"
+              id="email"
+              placeholder="E-mail"
+              required
+            />
+            <button type="button" class="subs-button">
+              <div class="button-footer">
+                <span class="subscribe">Subscribe</span>
+                <svg class="svg-send">
+                  <use href="./images/icons.svg#icon-send"></use>
+                </svg>
+              </div>
+            </button>
+          </div>
+        </form>
       </div>
     </footer>
 
@@ -544,9 +566,71 @@
             <use href="/images/icons.svg#icon-close-button-modal"></use>
           </svg>
         </button>
+
+        <form action="" class="form-modal">
+          <h1 class="title-form">
+            Leave your information and we'll call you back
+          </h1>
+          <div class="form-group-container">
+            <label for="name" class="form-group">
+              <span class="span-modal">Name</span>
+              <input type="text" name="name" id="name" class="input-form" />
+              <svg class="svg-label">
+                <use href="./images/icons.svg#icon-person"></use>
+              </svg>
+            </label>
+
+            <label for="tel" class="form-group">
+              <span class="span-modal">Telephone</span>
+              <input type="text" name="tel" id="tel" class="input-form" />
+              <svg class="svg-label">
+                <use href="./images/icons.svg#icon-phone"></use>
+              </svg>
+            </label>
+
+            <label for="email" class="form-group">
+              <span class="span-modal">E-mail</span>
+              <input type="text" name="email" id="email" class="input-form" />
+              <svg class="svg-label">
+                <use href="./images/icons.svg#icon-email"></use>
+              </svg>
+            </label>
+
+            <label for="comments" class="form-group">
+              <span class="span-modal">Comments</span>
+              <textarea
+                type="text"
+                name="comments"
+                id="comments"
+                class="input-comments"
+                placeholder="Enter the text"
+              ></textarea>
+            </label>
+          </div>
+
+          <label class="test">
+            <input
+              type="checkbox"
+              class="checkmark"
+              name="agreement"
+              value="agree"
+            />
+            <svg class="icon not-checked" width="16px" height="15px">
+              <use href="./images/icons.svg#icon-not-checked"></use>
+            </svg>
+            <p class="terms-paragraph">
+              I agree with the letter and accept the
+              <span><a href="">Terms and Conditions</a></span>
+            </p>
+          </label>
+          <div class="send-btn">
+            <button type="button" class="button-send">
+              <span class="type-send">Send</span>
+            </button>
+          </div>
+        </form>
       </div>
     </div>
-
     <script src="./js/modal.js"></script>
   </body>
 </html>
